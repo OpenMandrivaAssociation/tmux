@@ -1,16 +1,16 @@
 %define name	tmux
-%define version	0.7
+%define version	0.8
 %define release	%mkrel 1
 
 Summary:	Terminal multiplexer
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 License:	BSD 
 Group:		Terminals
 Url:		http://tmux.sourceforge.net/ 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ncurses-devel
 
 %description
