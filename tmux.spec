@@ -23,7 +23,7 @@ such as GNU screen.
 %setup -q
 
 %build
-%make
+CFLAGS="-I/usr/include/asm" %make
 
 %install
 %__rm -rf %{buildroot}
