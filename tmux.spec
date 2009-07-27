@@ -1,5 +1,5 @@
 %define name	tmux
-%define version	0.8
+%define version	0.9
 %define release	%mkrel 1
 
 Summary:	Terminal multiplexer
@@ -23,7 +23,8 @@ such as GNU screen.
 %setup -q
 
 %build
-CFLAGS="-I/usr/include/asm" %make
+./configure
+%make
 
 %install
 %__rm -rf %{buildroot}
