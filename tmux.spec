@@ -1,5 +1,5 @@
 %define name	tmux
-%define version	1.1
+%define version	1.2
 %define release	%mkrel 1
 
 Summary:	Terminal multiplexer
@@ -11,7 +11,7 @@ License:	BSD
 Group:		Terminals
 Url:		http://tmux.sourceforge.net/ 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	ncurses-devel
+BuildRequires:	ncurses-devel, libevent-devel
 
 %description
 tmux is a "terminal multiplexer". It allows a number of terminals (or
