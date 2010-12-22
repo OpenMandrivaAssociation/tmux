@@ -1,6 +1,6 @@
 %define name	tmux
 %define version	1.3
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Terminal multiplexer
 Name:		%{name}
