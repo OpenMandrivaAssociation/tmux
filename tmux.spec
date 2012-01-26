@@ -1,6 +1,6 @@
 %define name	tmux
-%define version	1.5
-%define release	%mkrel 1
+%define version	1.6
+%define release 1
 
 Summary:	Terminal multiplexer
 Name:		%{name}
@@ -10,7 +10,6 @@ Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 License:	BSD 
 Group:		Terminals
 Url:		http://tmux.sourceforge.net/ 
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ncurses-devel, libevent-devel
 
 %description
@@ -23,21 +22,17 @@ such as GNU screen.
 %setup -q
 
 %build
-./configure
+%configure2_5x
+#./configure
 %make
 
 %install
-%__rm -rf %{buildroot}
 %__install -d %{buildroot}%{_bindir}
 %__install -m 755 tmux %{buildroot}%{_bindir}
 %__install -d %{buildroot}%{_mandir}/man1
 %__install -m 644 tmux.1 %{buildroot}%{_mandir}/man1
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc FAQ NOTES TODO CHANGES examples/
 %_bindir/tmux
 %_mandir/man1/tmux.*
