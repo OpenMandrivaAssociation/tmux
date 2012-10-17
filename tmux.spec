@@ -1,6 +1,11 @@
 %define name	tmux
-%define version	1.6
-%define release 1
+%define version	1.7
+%define	rel		1
+%if %mdkversion < 201100
+%define release %mkrel %{rel}
+%else
+%define	release %{rel}
+%endif
 
 Summary:	Terminal multiplexer
 Name:		%{name}
