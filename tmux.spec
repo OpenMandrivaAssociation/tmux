@@ -1,7 +1,7 @@
 Summary:	Terminal multiplexer
 Name:		tmux
-Version:	1.6
-Release:	2
+Version:	1.7
+Release:	1
 License:	BSD 
 Group:		Terminals
 Url:		http://tmux.sourceforge.net/ 
