@@ -1,6 +1,6 @@
 Summary:	Terminal multiplexer
 Name:		tmux
-Version:	1.7
+Version:	1.8
 Release:	1
 License:	BSD 
 Group:		Terminals
@@ -29,7 +29,7 @@ install -d %{buildroot}%{_mandir}/man1
 install -m 644 tmux.1 %{buildroot}%{_mandir}/man1
 
 %files
-%doc FAQ NOTES TODO CHANGES examples/
+%doc FAQ TODO CHANGES examples/
 %{_bindir}/tmux
 %{_mandir}/man1/tmux.*
 
