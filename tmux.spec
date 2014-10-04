@@ -1,11 +1,11 @@
 Summary:	Terminal multiplexer
 Name:		tmux
-Version:	1.7
+Version:	1.9a
 Release:	1
 License:	BSD 
 Group:		Terminals
 Url:		http://tmux.sourceforge.net/ 
-Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/tmux/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(libevent)
 BuildRequires:	pkgconfig(ncurses)
 
@@ -29,7 +29,6 @@ install -d %{buildroot}%{_mandir}/man1
 install -m 644 tmux.1 %{buildroot}%{_mandir}/man1
 
 %files
-%doc FAQ NOTES TODO CHANGES examples/
+%doc FAQ TODO CHANGES examples/
 %{_bindir}/tmux
 %{_mandir}/man1/tmux.*
-
