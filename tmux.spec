@@ -1,7 +1,7 @@
 Summary:	Terminal multiplexer
 Name:		tmux
 Version:	1.9a
-Release:	1
+Release:	2
 License:	BSD 
 Group:		Terminals
 Url:		http://tmux.sourceforge.net/ 
