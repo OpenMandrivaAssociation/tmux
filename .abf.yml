@@ -1,5 +1,2 @@
-removed_sources:
-  tmux-1.6.tar.gz: 8756f6bcecb18102b87e5d6f5952ba2541f68ed3
-  tmux-1.8.tar.gz: 08677ea914e1973ce605b0008919717184cbd033
 sources:
-  tmux-1.9a.tar.gz: 815264268e63c6c85fe8784e06a840883fcfc6a2
+  tmux-3.0a.tar.gz: 0cc951b9ff545b429c101eb562e0be9c5aba5ed4
