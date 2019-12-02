@@ -1,11 +1,11 @@
 Summary:	Terminal multiplexer
 Name:		tmux
-Version:	1.9a
-Release:	2
+Version:	3.0a
+Release:	1
 License:	BSD 
 Group:		Terminals
 Url:		http://tmux.sourceforge.net/ 
-Source0:	http://downloads.sourceforge.net/tmux/%{name}-%{version}.tar.gz
+Source0:	https://github.com/tmux/tmux/releases/download/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(libevent)
 BuildRequires:	pkgconfig(ncurses)
 
@@ -19,8 +19,8 @@ such as GNU screen.
 %setup -q
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
 install -d %{buildroot}%{_bindir}
