@@ -29,6 +29,6 @@ install -d %{buildroot}%{_mandir}/man1
 install -m 644 tmux.1 %{buildroot}%{_mandir}/man1
 
 %files
-%doc FAQ TODO CHANGES examples/
+%doc README TODO CHANGES
 %{_bindir}/tmux
 %{_mandir}/man1/tmux.*
