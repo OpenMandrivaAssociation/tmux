@@ -1,8 +1,8 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        3.1c
-Release:        1%{?dist}
+Version:        3.2
+Release:        1
 Summary:        A terminal multiplexer
 # Most of the source is ISC licensed; some of the files in compat/ are 2 and
 # 3 clause BSD licensed.
