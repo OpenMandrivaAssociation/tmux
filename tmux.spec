@@ -12,6 +12,7 @@ Source0:        https://github.com/tmux/%{name}/releases/download/%{version}/%{n
 # Examples has been removed - so include the bash_completion here
 Source1:        bash_completion_tmux.sh
 
+BuildRequires:  bison
 BuildRequires:  pkgconfig(libevent)
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  pkgconfig(ncursesw)
