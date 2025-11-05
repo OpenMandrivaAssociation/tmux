@@ -2,15 +2,13 @@
 
 Name:           tmux
 Version:        3.5a
-Release:        1
+Release:        2
 Summary:        A terminal multiplexer
 # Most of the source is ISC licensed; some of the files in compat/ are 2 and
 # 3 clause BSD licensed.
 License:        ISC and BSD
 URL:            https://tmux.github.io/
 Source0:        https://github.com/tmux/%{name}/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Examples has been removed - so include the bash_completion here
-Source1:        bash_completion_tmux.sh
 
 BuildRequires:  bison
 BuildRequires:  pkgconfig(libevent)
@@ -25,16 +23,16 @@ intended to be a simple, modern, BSD-licensed alternative to programs such
 as GNU Screen.
 
 %prep
-%autosetup
+%autosetup -p1
+
+%conf
+%configure
 
 %build
-%configure
 %make_build
 
 %install
 %make_install
-# bash completion
-install -Dpm 644 %{SOURCE1} %{buildroot}%{_datadir}/bash-completion/completions/tmux
 
 %post
 if [ "$1" = 1 ]; then
@@ -58,5 +56,4 @@ fi
 %files
 %doc CHANGES
 %{_bindir}/tmux
-%{_mandir}/man1/tmux.1.*
-%{_datadir}/bash-completion/completions/tmux
+%{_mandir}/man1/tmux.1*
