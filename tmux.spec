@@ -1,7 +1,7 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        3.6
+Version:        3.6a
 Release:        1
 Summary:        A terminal multiplexer
 # Most of the source is ISC licensed; some of the files in compat/ are 2 and
