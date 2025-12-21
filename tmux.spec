@@ -10,6 +10,11 @@ License:        ISC and BSD
 URL:            https://tmux.github.io/
 Source0:        https://github.com/tmux/%{name}/releases/download/%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  bison
 BuildRequires:  pkgconfig(libevent)
 BuildRequires:  pkgconfig(ncurses)
