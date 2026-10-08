@@ -1,19 +1,18 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        3.7b
+Version:        3.8
 Release:        1
 Summary:        A terminal multiplexer
 # Most of the source is ISC licensed; some of the files in compat/ are 2 and
 # 3 clause BSD licensed.
 License:        ISC and BSD
+Group:          Terminals
 URL:            https://tmux.github.io/
 Source0:        https://github.com/tmux/%{name}/releases/download/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
 BuildRequires:	make
 BuildRequires:  bison
 BuildRequires:  pkgconfig(libevent)
